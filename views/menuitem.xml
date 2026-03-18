@@ -1,0 +1,16 @@
+<odoo>
+
+    
+    <record id='gpsmap_company_action' model='ir.actions.act_window'>
+        <field name="name">Customer</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form,pivot,graph</field>
+        <!--
+        <field name="context">{"search_default_groupby_vehicleid" : True, "search_default_today" : True}</field>
+        -->
+    </record>
+    <menuitem action="gpsmap_company_action" parent="fleet.fleet_configuration" id="gps_company_menu"  groups="fleet.fleet_group_user"/>
+    
+
+
+</odoo>
